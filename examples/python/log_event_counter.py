@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from zcm import ZCM, LogFile, LogEvent
+from zero_cm import ZCM, LogFile, LogEvent
 import sys
 
 if len(sys.argv) < 2:

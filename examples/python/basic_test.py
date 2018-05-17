@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from zcm import ZCM
+from zero_cm import ZCM
 import sys
 sys.path.insert(0, '../build/types/')
 from example_t import example_t
@@ -23,7 +23,7 @@ msg = example_t()
 msg.timestamp = 10
 
 # set up a subscription on channel "TEST"
-subs = zcm.subscribe("TEST", example_t, handler)
+zcm.subscribe("TEST", example_t, handler)
 
 # publish a message
 zcm.publish("TEST", msg)
