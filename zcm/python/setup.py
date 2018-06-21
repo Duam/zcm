@@ -3,16 +3,16 @@ from setuptools.extension import Extension
 from Cython.Build import cythonize
 
 setup(
-    name='zero_cm',
+    name='zerocm',
     version='1.0.0',
     url='https://github.com/ZeroCM/zcm',
     license='LGPL',
     packages=find_packages(),
-    py_modules='zero_cm',
+    py_modules='zerocm',
     ext_modules=cythonize([
         Extension(
-            "zero_cm",
-            ["zero_cm.pyx"],
+            "zerocm",
+            ["zerocm.pyx"],
             libraries=['zcm']
         )
     ])

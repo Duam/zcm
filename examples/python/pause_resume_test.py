@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import zero_cm
+import zerocm
 import sys
 sys.path.insert(0, '../build/types/')
 from example_t import example_t
