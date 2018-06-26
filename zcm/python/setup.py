@@ -2,6 +2,14 @@ from setuptools import setup, find_packages
 from setuptools.extension import Extension
 from Cython.Build import cythonize
 
+from ctypes.util import find_library
+if find_library("zcm") is None:
+    print("\n\n"
+          "##################################################################################################\n"
+          "#  Warning! You need to install the ZeroCM library before installing the zerocm python package!  #\n"
+          "#  Obtain it from here https://github.com/ZeroCM/zcm                                             #\n"
+          "##################################################################################################\n\n")
+
 setup(
     name='zerocm',
     version='1.0.0',
@@ -15,5 +23,5 @@ setup(
             ["zerocm.pyx"],
             libraries=['zcm']
         )
-    ])
+    ]),
 )
