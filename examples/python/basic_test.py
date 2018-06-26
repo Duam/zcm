@@ -23,7 +23,7 @@ msg = example_t()
 msg.timestamp = 10
 
 # set up a subscription on channel "TEST"
-zcm.subscribe("TEST", example_t, handler)
+subs = zcm.subscribe("TEST", example_t, handler)
 
 # publish a message
 zcm.publish("TEST", msg)

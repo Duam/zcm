@@ -7,7 +7,7 @@ if find_library("zcm") is None:
     print("\n\n"
           "##################################################################################################\n"
           "#  Warning! You need to install the ZeroCM library before installing the zerocm python package!  #\n"
-          "#  Obtain it from here https://github.com/ZeroCM/zcm                                             #\n"
+          "#  Build it from source here: https://github.com/ZeroCM/zcm                                             #\n"
           "##################################################################################################\n\n")
 
 setup(
